@@ -19,21 +19,21 @@ IMAGENS = {
     "dor_cabeca":        "https://drive.google.com/uc?export=download&id=13kTZUn0CV3QLP_UJzm6zs4iMxdSLQiFr",
     "ferimento_arma":    "https://drive.google.com/uc?export=download&id=1-jYR76QCbpUM1hQ0WzERfqCcy6ioSh69",
     "gripe":             "https://drive.google.com/uc?export=download&id=1MQ88k1CjQogOjVhgz3wuKGWTGkkYgh2V",
-    "inverno":           "PENDENTE",  # ← substitua pela URL do Drive
+    "inverno":           "https://drive.google.com/uc?export=download&id=1f9Hmb9tu-eXH3bSb0tPl3KH0f2t-DFOH",
     "mordida_animal":    "https://drive.google.com/uc?export=download&id=15vd3TxmittyqmA2P0v4oL3A3OZc5cJaf",
     "queda_altura":      "https://drive.google.com/uc?export=download&id=1xKU5mojAjGbyxpz3rwDarSUWJimrumLX",
     "queimadura_casa":   "https://drive.google.com/uc?export=download&id=1oQgWzyjCJOkHXn9pQQOSQlto54hf43fv",
     "queimadura_grave":  "https://drive.google.com/uc?export=download&id=1OvpKsfB2O0RlLP7G2gJDZUb-6sEFkq8u",
     "sangramento":       "https://drive.google.com/uc?export=download&id=1IJ0Q4u4ytQg38z-hireM70-7Bwomi88O",
     "sao_joao":          "https://drive.google.com/uc?export=download&id=1f6FgEKFrbLtfpAKt_iFMU8zlt1Qv_hqp",
-    "traumatismo":       "PENDENTE",  # ← substitua pela URL do Drive
+    "traumatismo":       "https://drive.google.com/uc?export=download&id=1Ax97m4qJCK93dWCQDrXkOphVHsdPqExn",
     "verao":             "https://drive.google.com/uc?export=download&id=1_ml424TkbwvESRLMlSP-5OK3uiIR0fBr",
 }
 
 LINKS = {
     "upa":    "📍 Encontre a UPA mais próxima:\nhttps://www.google.com/maps/search/UPA+próxima+de+mim",
     "ubs":    "📍 Encontre a UBS mais próxima:\nhttps://www.google.com/maps/search/UBS+próxima+de+mim",
-    "trauma": "📍 Encontre o Hospital de Trauma mais próximo:\nhttps://www.google.com/maps/search/Hospital+de+Trauma+próximo+de+mim",
+    "trauma": "📍 Hospital do Trauma:\nhttps://www.google.com/maps/search/Hospital+de+Trauma+Campina+Grande",
 }
 
 # ─── Árvore de navegação ──────────────────────────────────────────────────────
@@ -180,7 +180,6 @@ def _sangramento(phone):
 def _mordida_animal(phone):
     send_image(phone, IMAGENS["mordida_animal"])
     send_video(phone, VIDEOS["mordida_animal"], "🐾 O que fazer após uma mordida")
-    send_video(phone, VIDEOS["resolver_casa"], "🏠 Como tratar em casa")
 
 def _verao(phone):
     send_image(phone, IMAGENS["verao"])
